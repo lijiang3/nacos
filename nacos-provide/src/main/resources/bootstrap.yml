@@ -1,0 +1,16 @@
+server:
+  port: 9527
+spring:
+  profiles:
+    active: prod
+  application:
+    name: nacos-provide
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: properties
+        namespace: 355334c3-a805-4ea9-a2ed-ac9515beae25
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 355334c3-a805-4ea9-a2ed-ac9515beae25
