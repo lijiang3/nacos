@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: nacos-consumer
+  # rabbitmq ≈‰÷√
+  rabbitmq:
+    addresses: 115.159.98.98:5686,115.159.98.98:5688,115.159.98.98:5690
+    username: ftdd_rabbitmq
+    password: ftddBmSoft2020
+    publisher-confirms: true
+    publisher-returns: true
+    template:
+      mandatory: true
+    listener:
+      direct:
+        acknowledge-mode: manual
+      simple:
+        acknowledge-mode: manual
+        concurrency: 5
+        max-concurrency: 50
+server:
+  port: 8763
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
