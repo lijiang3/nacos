@@ -25,5 +25,4 @@ public class TestController {
     lxhTest.setPassword("123456");
     return lxhTest;
   }
-
 }

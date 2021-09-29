@@ -1,0 +1,15 @@
+###bmsoft开发环境
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      url: jdbc:mysql://123.206.219.14:3306/nor_user_dev?useUnicode=yes&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+      username: nor_user_dev
+      password: nor_user_dev@Bmsoft_D19
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.admin.nacosconsumer.model
+mapper:
+  enumAsSimpleType: true

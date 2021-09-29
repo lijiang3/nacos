@@ -1,6 +1,7 @@
 package com.admin.nacosprovide.model;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  * TODO
@@ -8,7 +9,8 @@ import lombok.Data;
  * @author by lxh
  * @date 2021/3/22 15:39
  */
-@Data
+@Setter
+@Getter
 public class LxhTest {
 
   private String id;

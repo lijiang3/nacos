@@ -24,8 +24,7 @@ public class ClientControlelr {
       urls.append(instance.getHost() + ":" + instance.getPort()).append(",");
     }
     LxhTest vo = new LxhTest();
-    vo.setUsername("service-prodvider1");
-    vo.setDescription(urls.toString());
+    vo.setUserName("service-prodvider1");
     return vo;
   }
 }
